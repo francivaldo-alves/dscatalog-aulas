@@ -3,21 +3,23 @@ package com.f3pro.dscatalog.entities;
 import jakarta.persistence.*;
 
 import java.time.Instant;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "tb_category")
 public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-     private Long id;
-     private String name;
+    private Long id;
+    private String name;
 
-     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-     private Instant createdAt;
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant createdAt;
 
-     @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-     private Instant updateAt;
+    @Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+    private Instant updateAt;
 
 
 
@@ -56,11 +58,12 @@ public class Category {
     }
 
     @PrePersist
-    public void prePersist(){
+    public void prePersist() {
         createdAt = Instant.now();
     }
+
     @PreUpdate
-    public void preUpdate(){
+    public void preUpdate() {
         updateAt = Instant.now();
     }
 
