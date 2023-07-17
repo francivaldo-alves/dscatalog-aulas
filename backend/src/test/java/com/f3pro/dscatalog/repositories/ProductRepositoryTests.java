@@ -1,7 +1,7 @@
 package com.f3pro.dscatalog.repositories;
 
 import com.f3pro.dscatalog.entities.Product;
-import com.f3pro.dscatalog.tests.Factory;
+import com.f3pro.dscatalog.Factory;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

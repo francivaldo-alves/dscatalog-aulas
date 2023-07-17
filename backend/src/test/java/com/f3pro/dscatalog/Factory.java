@@ -1,4 +1,4 @@
-package com.f3pro.dscatalog.tests;
+package com.f3pro.dscatalog;
 
 import com.f3pro.dscatalog.dto.ProductDTO;
 import com.f3pro.dscatalog.entities.Category;
